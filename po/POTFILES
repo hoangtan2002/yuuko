@@ -1,0 +1,6 @@
+data/com.yuuko.alert.desktop.in
+data/com.yuuko.alert.metainfo.xml.in
+data/com.yuuko.alert.gschema.xml
+src/main.c
+src/yuuko-window.c
+src/yuuko-window.ui

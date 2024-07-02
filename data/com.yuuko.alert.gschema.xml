@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="yuuko">
+	<schema id="com.yuuko.alert" path="/com/yuuko/alert/">
+	</schema>
+</schemalist>

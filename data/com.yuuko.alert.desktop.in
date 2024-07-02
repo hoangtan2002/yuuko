@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=yuuko
+Exec=yuuko
+Icon=com.yuuko.alert
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true

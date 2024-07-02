@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/com/yuuko/alert">
+    <file preprocess="xml-stripblanks">yuuko-window.ui</file>
+    <file preprocess="xml-stripblanks">gtk/help-overlay.ui</file>
+    <file>assets/yuuko.png</file>
+  </gresource>
+</gresources>
