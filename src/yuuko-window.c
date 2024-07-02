@@ -37,14 +37,6 @@ struct _YuukoWindow
 
 G_DEFINE_FINAL_TYPE (YuukoWindow, yuuko_window, ADW_TYPE_APPLICATION_WINDOW)
 
-void
-button_pressed(GAction     *action,
-               GVariant    *parameter,
-               YuukoWindow *self)
-{
-
-}
-
 static void
 yuuko_window_class_init (YuukoWindowClass *klass)
 {
