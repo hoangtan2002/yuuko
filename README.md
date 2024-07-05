@@ -2,13 +2,13 @@
 
 A recreation of the Yuuko alert dialog meme with Libadwaita + GTK4
 
-##Building
+## Building
 
 ### With GNOME Builder
 
 Clone the project, clone it and press Build 
 
-###Manually
+### Manually
 
 Clone the project and change the directory to the project's directory, then run
 ```
