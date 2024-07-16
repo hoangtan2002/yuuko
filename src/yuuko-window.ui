@@ -20,49 +20,49 @@
           </object>
         </child>
         <property name="content">
-        <object class="GtkWindowHandle">
-          <child>
-            <object class="GtkBox" id="col">
-            <property name="baseline-child">0</property>
-            <property name="spacing">32</property>
-            <property name="valign">3</property>
-            <property name="orientation">1</property>
+          <object class="GtkWindowHandle">
             <child>
-              <object class="GtkBox" id="row1">
-                <property name="baseline-child">0</property>
-                <property name="spacing">16</property>
-                <property name="halign">3</property>
-                <property name="orientation">0</property>
-                <child>
-                  <object class="GtkImage" id="img">
-                    <property name="resource">/com/yuuko/alert/assets/yuuko.png</property>
-                    <property name="pixel-size">48</property>
-                  </object>
+              <object class="GtkBox" id="col">
+              <property name="baseline-child">0</property>
+              <property name="spacing">32</property>
+              <property name="valign">3</property>
+              <property name="orientation">1</property>
+              <child>
+                <object class="GtkBox" id="row1">
+                  <property name="baseline-child">0</property>
+                  <property name="spacing">16</property>
+                  <property name="halign">3</property>
+                  <property name="orientation">0</property>
+                  <child>
+                    <object class="GtkImage" id="img">
+                      <property name="resource">/com/yuuko/alert/assets/yuuko.png</property>
+                      <property name="pixel-size">48</property>
+                    </object>
+                  </child>
+                  <child>
+                    <object class="GtkLabel" id="label">
+                      <property name="label">Selamat Pagi!</property>
+                      <style>
+                        <class name="title-1"/>
+                      </style>
+                    </object>
+                  </child>
+                </object>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="label">
-                    <property name="label">Selamat Pagi!</property>
+                  <object class="GtkButton" id="bottom_button">
+                    <property name="label"> Ok!</property>
+                    <property name = "hexpand">false</property>
+                    <property name="halign">3</property>
                     <style>
-                      <class name="title-1"/>
+                      <class name="pill"/>
+                      <class name="suggested-action"/>
                     </style>
                   </object>
                 </child>
               </object>
-              </child>
-              <child>
-                <object class="GtkButton" id="bottom_button">
-                  <property name="label"> Ok!</property>
-                  <property name = "hexpand">false</property>
-                  <property name="halign">3</property>
-                  <style>
-                    <class name="pill"/>
-                    <class name="suggested-action"/>
-                  </style>
-                </object>
-              </child>
-            </object>
-          </child>
-        </object>
+            </child>
+          </object>
         </property>
       </object>
     </property>
