@@ -3,8 +3,8 @@
   <requires lib="gtk" version="4.0"/>
   <requires lib="Adw" version="1.0"/>
   <template class="YuukoWindow" parent="AdwApplicationWindow">
-    <property name="default-width">300</property>
-    <property name="default-height">200</property>
+    <property name="default-width">240</property>
+    <property name="default-height">160</property>
     <property name="title">Alert!</property>
     <property name="content">
       <object class="AdwToolbarView">
@@ -23,32 +23,36 @@
         <property name="content">
           <object class="GtkWindowHandle">
             <child>
-              <object class="GtkBox" id="col">
-              <property name="baseline-child">0</property>
-              <property name="spacing">32</property>
-              <property name="valign">3</property>
-              <property name="orientation">1</property>
-              <child>
-                <object class="GtkBox" id="row1">
-                  <property name="baseline-child">0</property>
-                  <property name="spacing">16</property>
-                  <property name="halign">3</property>
-                  <property name="orientation">0</property>
-                  <child>
-                    <object class="GtkImage" id="img">
-                      <property name="resource">/com/yuuko/alert/assets/yuuko.png</property>
-                      <property name="pixel-size">48</property>
-                    </object>
-                  </child>
-                  <child>
-                    <object class="GtkLabel" id="label">
-                      <property name="label">Selamat Pagi!</property>
-                      <style>
-                        <class name="title-1"/>
-                      </style>
-                    </object>
-                  </child>
-                </object>
+              <object class="GtkGrid" id ="grid">
+                <property name="valign">3</property>
+                <property name="halign">3</property>
+                <property name="row-spacing">8</property>
+                <property name="column-spacing">8</property>
+                <property name="margin-start">16</property>
+                <property name="margin-end">16</property>
+                <property name="margin-top">16</property>
+                <property name="margin-bottom">16</property>
+                <child>
+                  <object class="GtkImage" id="img">
+                    <property name="resource">/com/yuuko/alert/assets/yuuko.png</property>
+                    <property name="pixel-size">48</property>
+                    <layout>
+                      <property name="column">0</property>
+                      <property name="row">0</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="label">
+                    <property name="label">Selamat Pagi!</property>
+                    <style>
+                      <class name="title-1"/>
+                    </style>
+                    <layout>
+                      <property name="column">1</property>
+                      <property name="row">0</property>
+                    </layout>
+                  </object>
                 </child>
                 <child>
                   <object class="GtkButton" id="bottom_button">
@@ -59,6 +63,11 @@
                       <class name="pill"/>
                       <class name="suggested-action"/>
                     </style>
+                    <layout>
+                      <property name="column">0</property>
+                      <property name="row">1</property>
+                      <property name="column-span">2</property>"
+                    </layout>
                   </object>
                 </child>
               </object>
@@ -77,3 +86,4 @@
     </section>
   </menu>
 </interface>
+

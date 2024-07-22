@@ -29,8 +29,7 @@ struct _YuukoWindow
 	/* Template widgets */
 	AdwHeaderBar        *header_bar;
 	GtkLabel            *label;
-        GtkBox              *row1;
-        GtkBox              *col;
+        GtkGrid             *grid;
         GtkImage            *img;
         GtkButton           *bottom_button;
 };
@@ -44,8 +43,7 @@ yuuko_window_class_init (YuukoWindowClass *klass)
 
 	gtk_widget_class_set_template_from_resource (widget_class, "/com/yuuko/alert/yuuko-window.ui");
 	gtk_widget_class_bind_template_child (widget_class, YuukoWindow, header_bar);
-        gtk_widget_class_bind_template_child (widget_class, YuukoWindow, row1);
-        gtk_widget_class_bind_template_child (widget_class, YuukoWindow, col);
+	gtk_widget_class_bind_template_child (widget_class, YuukoWindow, grid);
 	gtk_widget_class_bind_template_child (widget_class, YuukoWindow, label);
 	gtk_widget_class_bind_template_child (widget_class, YuukoWindow, img);
   	gtk_widget_class_bind_template_child (widget_class, YuukoWindow, bottom_button);
